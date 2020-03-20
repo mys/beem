@@ -24,6 +24,16 @@ known_chains = {
             {"asset": "VESTS", "symbol": "VESTS", "precision": 6, "id": 2}
         ],
     },
+    "HIVE": {
+        "chain_id": "0" * int(256 / 4),
+        "min_version": '0.23.0',
+        "prefix": "STM",
+        "chain_assets": [
+            {"asset": "HBD", "symbol": "HBD", "precision": 3, "id": 0},
+            {"asset": "HIVE", "symbol": "HIVE", "precision": 3, "id": 1},
+            {"asset": "VESTS", "symbol": "VESTS", "precision": 6, "id": 2}
+        ],
+    },
     "STEEMZERO": {
         "chain_id": "0" * int(256 / 4),
         "min_version": '0.0.0',
