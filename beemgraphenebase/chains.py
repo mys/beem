@@ -14,23 +14,28 @@ known_chains = {
             {"asset": "@@000000037", "symbol": "VESTS", "precision": 6, "id": 2}
         ],
     },
+    # this is needed to send transactions
+    # ! use STEEM as currency
     "STEEM": {
         "chain_id": "0" * int(256 / 4),
         "min_version": '0.19.5',
         "prefix": "STM",
         "chain_assets": [
-            {"asset": "SBD", "symbol": "SBD", "precision": 3, "id": 0},
-            {"asset": "STEEM", "symbol": "STEEM", "precision": 3, "id": 1},
+            # unfo in future
+            {"asset": "HBD", "symbol": "SBD", "precision": 3, "id": 0},
+            {"asset": "HIVE", "symbol": "STEEM", "precision": 3, "id": 1},
             {"asset": "VESTS", "symbol": "VESTS", "precision": 6, "id": 2}
         ],
     },
+    # this is needed to negotiate with HIVE node
     "HIVE": {
         "chain_id": "0" * int(256 / 4),
         "min_version": '0.23.0',
         "prefix": "STM",
         "chain_assets": [
-            {"asset": "HBD", "symbol": "HBD", "precision": 3, "id": 0},
-            {"asset": "HIVE", "symbol": "HIVE", "precision": 3, "id": 1},
+            # unfo in future
+            {"asset": "SBD", "symbol": "HBD", "precision": 3, "id": 0},
+            {"asset": "STEEM", "symbol": "HIVE", "precision": 3, "id": 1},
             {"asset": "VESTS", "symbol": "VESTS", "precision": 6, "id": 2}
         ],
     },
